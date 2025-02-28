@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!--icon-->
+	<link rel="stylesheet" href="css/bootstrap-icons.css">
+	<!--css link-->
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/media.css">
+	<title>Jquery</title>
+</head>
+<body>
+<div class="container">
+	<h2>alert</h2>
+	<button type="button" class="btn btn-info" id="btn1">click me</button>
+	<br><br>
+	<h2>show and hide</h2>
+	<button type="button" class="btn btn-danger" id="btn2" >Show</button>
+	<button type="button" class="btn btn-info" id="btn3">Hide</button>
+	<br><br>
+	<h2 class="h2">Ij Bithi</h2>
+	<h2>change</h2>
+	<input class="input" type="text">
+	<br><br>
+    <p>Write something in the input field, and then press enter or click outside the field.</p>
+    <h2>DblClick</h2>
+    <h4 class="h4">Double-click on this paragraph.</h4>
+    <h2>Delegate</h2>
+    <div class="div1">
+    	<p class="p1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit.</p>
+    </div>
+    <p class="p2">Lorem ipsum dolor sit, amet.</p>
+</div>	
+<section class="container">
+      <!-- show hide toggle  -->
+      <div class="mt-3">
+        <button type="button" id="hide" class="btn btn-primary">
+          Click hide all P
+        </button>
+        <button type="button" id="show" class="btn btn-success">
+          Click show all P
+        </button>
+        <button type="button" id="toggle" class="btn btn-warning">
+          Click toggle all P
+        </button>
+        <p id="hide_show" class="hide_show">Click me for each item hide- 1</p>
+        <p id="hide_show" class="hide_show">Click me for each item hide- 2</p>
+        <p id="hide_show" class="hide_show">Click me for each item hide - 3</p>
+      </div>
+      <!-- input  -->
+      <div class="mt-3">
+        Name: <input type="text" name="fullname" /><br /><br />
+        Email: <input type="text" name="email" />
+      </div>
+      <!-- fade in  -->
+      <div class="mt-3" id="fade_container">
+        <button
+          id="fade_btn"
+          type="button"
+          class="btn btn-warning w-100 px-2 py-5 fade_btn"
+        >
+          click for fade toggle
+        </button>
+        <div id="fade_toggle" class="p-3 bg-dark">
+          <p class="text-white">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae
+            repellendus odit odio atque nesciunt consequuntur, voluptates
+            molestias natus pariatur aliquid rerum, labore officiis omnis nobis,
+            nostrum nihil exercitationem fugiat reprehenderit veniam aut
+            similique quam sint asperiores error? Praesentium expedita nam culpa
+            fugit officiis itaque, dolorem minus ipsam excepturi quo enim.
+          </p>
+        </div>
+      </div>
+      <!-- fade out  -->
+
+      <!-- slide toggle  -->
+      <div class="mt-3">
+        <div id="flip">click for slide up or down</div>
+        <div id="panel">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias
+          maiores velit labore dignissimos eum debitis delectus culpa natus
+          dolorem rem. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Delectus commodi quas eaque dolore, quos sunt accusantium aperiam! Quo
+          voluptate sit labore sequi alias recusandae? Possimus suscipit
+          reprehenderit qui perferendis odit?
+        </div>
+      </div>
+
+      <!-- animation  -->
+      <div class="mt-3 position-relative">
+        <h3>Animation for left to right</h3>
+        <button id="animation1Btn" type="button" class="btn btn-success mb-3">
+          Click for left to right
+        </button>
+        <div id="animation1"></div>
+      </div>
+      <div class="mt-3">
+        <h3>Animation for resize more and more</h3>
+        <button id="animation2Btn" type="button" class="btn btn-dark mb-3">
+          resize
+        </button>
+        <div id="animation2"></div>
+      </div>
+      <div class="mt-3">
+        <h3>Height Toggle</h3>
+        <button id="animation3Btn" type="button" class="btn btn-danger mb-3">
+          Height Toggle
+        </button>
+        <div id="animation3"></div>
+      </div>
+      <div class="mt-3">
+        <h3>animation</h3>
+        <button id="animation4Btn" type="button" class="btn btn-warning mb-3">
+          clck for animation
+        </button>
+        <div id="animation4"></div>
+      </div>
+      <!-- increase container with font size  -->
+      <div class="mt-3">
+        <h3>Increase container with font size</h3>
+        <button id="animation5Btn" type="button" class="btn btn-success mb-3">
+          click for increase
+        </button>
+        <div
+          id="animation5"
+          class="d-flex justify-content-center align-items-center px-2"
+        >
+          Hello World
+        </div>
+      </div>
+      <!-- stop  -->
+      <div class="mt-lg-5">
+        <button id="slide_stop_btn" type="button" class="btn btn-danger">
+          Click for stop slide
+        </button>
+        <div id="flip1" class="px-2 py-3 mt-2">
+          <h3>Click to slide down</h3>
+        </div>
+        <div id="panel1" class="">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero quae
+            commodi libero? Repudiandae debitis officia asperiores vero enim
+            quaerat veritatis ab eveniet voluptatum tempora! Sunt porro modi
+            exercitationem reiciendis consequuntur.
+          </p>
+        </div>
+      </div>
+
+      <!-- show text html  -->
+      <div class="my-5">
+        <p id="text">
+          This is some <strong>Strong</strong> text in a paragraph
+        </p>
+        <button id="show_text" type="button" class="btn btn-warning">
+          Click for show text
+        </button>
+        <button id="show_html" type="button" class="btn btn-danger">
+          Click for show HTML
+        </button>
+      </div>
+      <!-- show input value  -->
+      <div class="my-5">
+        <span>
+          Name:
+          <input
+            id="name"
+            class="form-control text-bg-success"
+            type="text"
+            value="Ij Bithi"
+          />
+        </span>
+        <button
+          id="show_value"
+          type="button"
+          class="btn btn-info text-white mt-3"
+        >
+          Click for show input value
+        </button>
+      </div>
+      <!-- set text, HTML, value  -->
+      <div>
+        <p id="set_text">Lorem ipsum dolor sit amet.</p>
+        <p id="set_html">Lorem ipsum dolor sit amet.</p>
+        Name:
+        <input type="text" id="set_value" value="Ij Bithi" /><br /><br />
+        <button type="button" id="set_text_btn" class="btn btn-warning">
+          Set text
+        </button>
+        <button type="button" id="set_html_btn" class="btn btn-success">
+          Set HTML
+        </button>
+        <button type="button" id="set_value_btn" class="btn btn-danger">
+          Set Value
+        </button>
+      </div>
+
+      <!-- add elements  -->
+      <div class="my-4">
+        <button type="button" id="append_btnP" class="btn btn-danger">
+          Append text
+        </button>
+        <button type="button" id="prepend_btnP" class="btn btn-secondary">
+          Prepend text
+        </button>
+        <p id="append_text">This is a paragraph 1</p>
+        <button type="button" id="append_btnLi" class="btn btn-warning">
+          append List item
+        </button>
+        <button type="button" id="prepend_btnLi" class="btn btn-warning">
+          Prepend List item
+        </button>
+        <ol id="append_ol">
+          <li>list item</li>
+          <li>list item</li>
+        </ol>
+      </div>
+      <!-- remove text  -->
+      <div class="my-5">
+        <button id="removeBtn" class="btn btn-dark">Remove element</button>
+        <button id="removeAllP" class="btn btn-dark">
+          Remove all p with class text
+        </button>
+        <div
+          id="remove_div"
+          style="background-color: aquamarine; width: 300px; height: 150px"
+          class="mt-2 p-3"
+        >
+          Lorem ipsum dolor sit amet.
+          <p class="text">paragraph 1</p>
+          <p class="text">paragraph 2</p>
+        </div>
+      </div>
+      <!-- empty text  -->
+      <div class="my-5">
+        <button id="emptyBtn" class="btn btn-info">Empty element</button>
+
+        <div
+          id="empty_text"
+          style="
+            background-color: rgb(230, 177, 139);
+            width: 300px;
+            height: 150px;
+          "
+          class="mt-2 p-3"
+        >
+          Lorem ipsum dolor sit amet.
+          <p class="">paragraph 1</p>
+          <p class="">paragraph 2</p>
+        </div>
+      </div>
+      <!-- add class  -->
+      <div class="my-5">
+        <h1 class="add_h1">This is heading one</h1>
+        <h2 class="add_h2">This is heading two</h2>
+        <p class="add_p">Lorem ipsum dolor sit amet.</p>
+        <div class="add_div">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+        </div>
+        <button class="btn btn-primary mt-2" type="button" id="addClass">
+          Toggle Class with style
+        </button>
+      </div>
+      <!-- ancestors  -->
+      <h2>jQuery Traversing - Ancestors</h2>
+      <div class="ancestors my-5">
+        <div style="width: 500px">
+          div (great-grandparent)
+          <ul>
+            ul (Grand parent)
+            <li>
+              li (direct parent)
+              <span class="span">span</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- parents  -->
+      <!-- <div class="ancestors my-5">
+        <div style="width: 500px">
+          div (great-grandparent)
+          <ul>
+            ul (Grand parent)
+            <li>
+              li (direct parent)
+              <span class="span_parends">span</span>
+            </li>
+          </ul>
+        </div>
+      </div> -->
+
+      <!-- span parents  -->
+      <div class="ancestors my-5">
+        <div style="width: 500px">
+          div (great-grandparent)
+          <ul>
+            ul (Grand parent)
+            <li>
+              li (direct parent)
+              <span class="span_parends">span</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- until parents  -->
+      <div class="ancestors my-5">
+        <div style="width: 500px">
+          div (great-grandparent)
+          <ul>
+            ul (Grand parent)
+            <li>
+              li (direct parent)
+              <span class="parentsUntil">span</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- ancestors  -->
+      <h2>jQuery Traversing - Descendants</h2>
+      <div class="ancestors descendants my-5" style="width: 500px">
+        <div>
+          div (great-grandparent)
+          <ul>
+            ul (Grand parent)
+            <li>
+              li (direct parent)
+              <span class="">span</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- .........  -->
+      <div class="ancestors" style="width: 500px">
+        <div class="descendants1">
+          div (current element)
+          <p class="first">
+            p (child)
+            <span>span (grandchild)</span>
+          </p>
+          <p class="second">
+            p (child)
+            <span>span (grandchild)</span>
+          </p>
+        </div>
+      </div>
+      <!-- .....decendants find....  -->
+      <h3>decendants find</h3>
+      <div class="ancestors" style="width: 500px">
+        <div class="descendants1">
+          div (current element)
+          <p class="">
+            p (child)
+            <span>span (grandchild)</span>
+          </p>
+          <p class="">
+            p (child)
+            <span>span (grandchild)</span>
+          </p>
+        </div>
+      </div>
+
+      <!-- jquery siblings  -->
+      <h5>jQuery siblings</h5>
+      <div class="ancestors">
+        <div class="siblings">
+          div (parent)
+          <p>p</p>
+          <span>span</span>
+          <h2 class="h2">h2</h2>
+          <h3>h3</h3>
+          <p>p</p>
+        </div>
+      </div>
+      <!-- jquery siblings  -->
+      <h5>jQuery siblings</h5>
+      <div class="ancestors">
+        <div class="siblings1">
+          div (parent)
+          <p>p</p>
+          <span>span</span>
+          <h2 class="h2_sib">h2</h2>
+          <h3>h3</h3>
+          <p>p</p>
+        </div>
+      </div>
+      <!-- jquery next  -->
+      <h5>jQuery next</h5>
+      <div class="ancestors">
+        <div class="next">
+          div (parent)
+          <p>p</p>
+          <span>span</span>
+          <h2 class="h2_next">h2</h2>
+          <h3>h3</h3>
+          <p>p</p>
+        </div>
+      </div>
+      <div class="ancestors">
+        <div class="next">
+          div (parent)
+          <p>p</p>
+          <span>span</span>
+          <h2 class="h2_next1">h2</h2>
+          <h3>h3</h3>
+          <p>p</p>
+        </div>
+      </div>
+      <h5>nextUntil</h5>
+      <div class="ancestors">
+        <div class="nextUntil">
+          div (parent)
+          <p>p</p>
+          <span>span</span>
+          <h2 class="nu1">h2</h2>
+          <h3>h3</h3>
+          <h4>h4</h4>
+          <h5>h5</h5>
+          <h6 class="nu2">h6</h6>
+          <p>p</p>
+        </div>
+      </div>
+      <h4>jQuery Filtering</h4>
+      <div>
+        <div class="first1">
+          <h5>first</h5>
+          <p>Lorem ipsum dolor sit amet.</p>
+          <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div class="first1">
+          <h5>Second</h5>
+          <p>Lorem ipsum dolor sit amet.</p>
+          <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div class="first1">
+          <h5>Third</h5>
+          <p>Lorem ipsum dolor sit amet.</p>
+          <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div class="first1">
+          <h5>last</h5>
+          <p>Lorem ipsum dolor sit amet.</p>
+          <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div>
+          <h3>Find the last division</h3>
+          <div class="last">
+            <h5>first</h5>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p>Lorem ipsum dolor sit amet.</p>
+          </div>
+          <div class="last">
+            <h5>Second</h5>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p>Lorem ipsum dolor sit amet.</p>
+          </div>
+          <div class="last">
+            <h5>Third</h5>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p>Lorem ipsum dolor sit amet.</p>
+          </div>
+          <div class="last">
+            <h5>last</h5>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p>Lorem ipsum dolor sit amet.</p>
+          </div>
+        </div>
+
+        <div>
+          <h3>find with eq()</h3>
+          <p class="eq">Lorem ipsum dolor sit amet. index: 0</p>
+          <p class="eq">Lorem ipsum dolor sit amet. index: 1</p>
+          <p class="eq">Lorem ipsum dolor sit amet. index: 2</p>
+          <p class="eq">Lorem ipsum dolor sit amet. index: 3</p>
+        </div>
+        <div>
+          <h3>find with filter()</h3>
+          <p class="">Lorem ipsum dolor sit amet. index: 0</p>
+          <p class="filter">Lorem ipsum dolor sit amet. index: 1</p>
+          <p class="filter">Lorem ipsum dolor sit amet. index: 2</p>
+          <p class="">Lorem ipsum dolor sit amet. index: 3</p>
+        </div>
+        <div>
+          <h4>Ajax load</h4>
+          <div id="load"><h2>Let jQuery AJAX Change This Text</h2></div>
+          <button id="loadBtn" type="button" class="btn btn-secondary">
+            Get External Content
+          </button>
+        </div>
+        <!-- get  -->
+        <button id="getBtn" type="button" class="btn btn-warning my-4">
+          Send an HTTP GET request to a page and get the result</button
+        ><br />
+        <!-- post  -->
+        <button id="postBtn" type="button" class="btn btn-success my-4">
+          Send an HTTP POST request to a page and Post the result
+        </button>
+
+        <h2>Filterable Table</h2>
+        <p>
+          Type something in the input field to search the table for first names,
+          last names or emails:
+        </p>
+        <input id="myInput" type="text" placeholder="Search.." />
+        <br /><br />
+
+        <table>
+          <thead>
+            <tr>
+              <th>Firstname</th>
+              <th>Lastname</th>
+              <th>Email</th>
+            </tr>
+          </thead>
+          <tbody id="myTable">
+            <tr>
+              <td>Israt</td>
+              <td>bithi</td>
+              <td>john@example.com</td>
+            </tr>
+            <tr>
+              <td>Ij</td>
+              <td>Sehli</td>
+              <td>mary@mail.com</td>
+            </tr>
+            <tr>
+              <td>Tusar</td>
+              <td>Ahamed</td>
+              <td>a_r@test.com</td>
+            </tr>
+            <tr>
+              <td>Yousuf</td>
+              <td>Ali</td>
+              <td>july@greatstuff.com</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <p>
+          Note that we start the search in tbody, to prevent filtering the table
+          headers.
+        </p>
+        <br /><br />
+        <input id="myInput1" type="text" placeholder="Search.." />
+        <br />
+
+        <ul id="myList">
+          <li>First item</li>
+          <li>Second item</li>
+          <li>Third item</li>
+          <li>Fourth</li>
+        </ul>
+      </div>
+    </section>
+
+
+
+<!--script js-->
+<script src="js/jquery-3.6.4.min.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/script.js"></script>	
+</body>
+</html>
